@@ -88,7 +88,7 @@
 
 
 
-                var pop = location.weatherElement[1].time[0].parameter.parameterName;
+                
                 var locationName = location.locationName;
                 var wx = location.weatherElement[0].time[0].parameter.parameterName;
                 var pop = location.weatherElement[1].time[0].parameter.parameterName;
@@ -96,7 +96,7 @@
                 var maxt = location.weatherElement[4].time[0].parameter.parameterName;
                 var weather_src;
                 var pop_h = location.weatherElement[1].time;
-                console.log(pop);
+                // console.log(pop);
            
 
                 if (pop < 30) {
@@ -125,6 +125,7 @@
                                      <div class="time">時間${time} : ${sec}</div>
                                      <img src="${weather_src}" alt="">
                                      <p class="time">${wx}</p>
+                                     <p class="time">降雨機率: ${pop}</p>
                                      <p class="temperature">${mint}-${maxt}c</p>
                                      </div>`;
             });
